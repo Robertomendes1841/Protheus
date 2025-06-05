@@ -8,11 +8,10 @@
 +-—————————-+-—————————————————————————————————————————-+-————-+-——————————-+
 | Autor     | Roberto Mendes Rodrigues                  | Data | 13/10/2020 |
 +-—————————-+-—————————————————————————————————————————-+-————-+-——————————-+
-| Descricao | Email para Aniversariantes do Mês|
+| Descricao | Email para Aniversariantes do Mês                             |
 +-———————————-+-——————————-+-——————————————————————————————————————————————-+ /*/
 
 
-* Aniversario e Aniversário de Empresa !!!
 
 
 ***********************
@@ -75,7 +74,7 @@ Local xRet
 cRecebe   := cEmail
 
 
-if "TESTE" $ upper(GetEnvServer()) .or. "HARPIA" $ upper(GetEnvServer())
+if "TESTE" $ upper(GetEnvServer())                   // Se rodar na base teste, envia apenas para este email,,, "para fazer teste enviando apenas pra você"
      cRecebe   := "seuemail@seudominio.com.br" 
 endif
 
