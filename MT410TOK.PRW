@@ -1,5 +1,4 @@
 
-
 ************************
 User Function MT410TOK() 
 ************************
@@ -49,9 +48,9 @@ if nMediaC1 > nMediaC2
           "Informando a chave LIBERA PRAZO MAIOR o pedido será salvo e um e-mail" + CRLF + CRLF + ;
           "será enviado aos envolvidos no processo para posterior análise")
 	
-	cChave := FWInputBox("Informe a chave para liberação !" , cChave )
-
-	if upper(cChave) <>  cChaveLIB ; msgStop("<h2> Pedido não poderá ser salvo !</h2>" , "Chave de liberação inválida!") ; endif
+    cChave := FWInputBox("Informe a chave para liberação !" , cChave )
+   
+    if upper(cChave) <>  cChaveLIB ; msgStop("<h2> Pedido não poderá ser salvo !</h2>" , "Chave de liberação inválida!") ; lRet := .f. ; endif
 
     femLibAcPr(cCond1,cCond2,nMediaC1,nMediaC2)
  
