@@ -70,7 +70,7 @@ Local cAssunto := "Condição acima do prazo - Pedido de Vendas"
 
 Local cCorpo   := "Número do Pedido " + M->C5_NUM + CRLF + CRLF + "Cliente " + SA1->A1_NOME + CRLF + CRLF + ;
                   "Condição de Pagamento informada no Pedido " + cCond1 + " Prazo Médio " + str(nMediaC1,3) + " dias " + CRLF + CRLF + ;
-				  "Condição de Pagamento Cadastro do Cliente " + cCond2 + " Prazo Médio " + str(nMediaC2,3) + " dias "
+                  "Condição de Pagamento Cadastro do Cliente " + cCond2 + " Prazo Médio " + str(nMediaC2,3) + " dias "
 
 
 fEnviaMail(cPara,cAssunto,cCorpo)
