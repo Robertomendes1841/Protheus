@@ -92,7 +92,7 @@ for nX = 1 to len(aItens)
         cItensUSU += "<br>"
         cItensUSU += "<br>"
 
-        fEnvMail2("Atendimento de Solicitação de Compras, Pedido "+subs(cPedido,3,len(SC7->C7_NUM))+" - "+u_fsiglafil() , cItensUSU , cUserC1At )  // envia o email com os itens da SC do usuário Atual
+        fEnvMail2("Atendimento de Solicitação de Compras, Pedido "+subs(cPedido,3,len(SC7->C7_NUM)) , cItensUSU , cUserC1At )  // envia o email com os itens da SC do usuário Atual
 
 next	  
 
@@ -104,7 +104,7 @@ Return
 **************************************
 Static Function fEnvMail2(cAssunto,cMsg,cUsersC1)
 **************************************
-Local cPara := alltrim(UsrRetMail(cUsersC1)) + ";"+alltrim(UsrRetMail(__CUserId))
+Local cPara := alltrim(UsrRetMail(cUsersC1)) + ";" + alltrim(UsrRetMail(__CUserId))
 
 fEnviaMail(cPara,cAssunto,cMsg)
 
