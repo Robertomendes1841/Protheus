@@ -131,6 +131,8 @@ While TEMPFER->(!EoF())
 
     ctxtLog +=  "<tr>"
 
+    ctxtLog +=  "<td>"+TEMPFER->EMPRESA+"</td>"
+
     ctxtLog +=  "<td>"+TEMPFER->RA_MAT+"</td>"
 
     ctxtLog +=  "<td>"+TEMPFER->RA_NOME+"</td>"
